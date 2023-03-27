@@ -7,6 +7,8 @@ import java.util.EmptyStackException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import question1.answer.AnswerMinimumStack;
+
 class MinimumStackTest {
 
   private MinimumStack<Integer> minimumStack;
@@ -14,7 +16,7 @@ class MinimumStackTest {
   @BeforeEach
   public void setupMinimumStackOfIntegers() {
     // Modify the minimum stack used for testing
-    minimumStack = new MinimumStackImpl<>();
+    minimumStack = new AnswerMinimumStack<>();
   }
 
   @Test
