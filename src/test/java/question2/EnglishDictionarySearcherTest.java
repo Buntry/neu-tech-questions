@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import question2.answer.AnswerEnglishDictionarySearcher;
 import question2.internal.DictionaryFactory;
 
 class EnglishDictionarySearcherTest {
@@ -23,7 +22,7 @@ class EnglishDictionarySearcherTest {
 
   @BeforeEach public void setupEnglishDictionarySearcher() {
     // Modify the english dictionary searcher used for testing
-    englishDictionarySearcher = new AnswerEnglishDictionarySearcher();
+    englishDictionarySearcher = new EnglishDictionarySearcherImpl();
   }
 
   @Test public void testReturnsNegativeValueIfWordMissingFirstPage() {
